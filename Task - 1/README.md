@@ -1,90 +1,67 @@
-# 📝 To-Do List Application in C++
+# 🎲 Number Guessing Game in C++
 
-This is a simple command-line To-Do List application built with *C++* as part of the *CODSOFT Virtual Internship Program*.
-
-It allows you to manage tasks through a text-based interface using basic file handling.
-
----
+This is a simple terminal-based Number Guessing Game written in C++. The player selects a difficulty level, and then tries to guess the randomly generated number within a specified range.
 
 ## 🚀 Features
 
-- ✅ Add new tasks
-- ❌ Delete existing tasks
-- 🔁 Mark tasks as completed
-- 📋 View all tasks
-- 💾 Saves data using text files (to.txt)
+- Difficulty levels:
+  - Easy: 0 to 20
+  - Medium: 0 to 50
+  - Hard: 0 to 100
+- Feedback on whether the guessed number is too high or too low
+- User-friendly terminal interaction
+- Random number generation using current time
 
----
+## 🧠 How It Works
 
-## 🛠 How It Works
+1. The user selects whether to play or exit.
+2. If playing, the user chooses a difficulty level.
+3. The program generates a random number based on the selected level.
+4. The user continues guessing until the correct number is found, with hints provided after each guess.
 
-The application saves task details in a plain text file, to.txt. Each task entry includes:
+## 🛠 Technologies Used
 
-- Task Name
-- Description
-- Due Date (DD-MM-YYYY)
-- Status (Pending / Completed)
+- C++
+- Standard Library (iostream, cstdlib, ctime)
 
----
+## 📦 How to Compile and Run
 
-## 📂 File Structure
+### Using g++:
 
-
-Task - 4/
-├── To_Do_List.cpp       # Main source code
-├── README.md            # Project documentation
-└── to.txt               # Task data (auto-created)
-
-
----
-
-## 📸 Sample Output
-
-text
-1 - Add Task :
-2 - Delete Task :
-3 - update status :
-4 - view tasks :
-0 - exit :
-:- 1
-Task : 1
-Enter task name : Grocery Shopping
-Enter task Detail : Buy milk, eggs, bread
-Enter task Date(DD-MM-YYYY) : 28-05-2025
-Successfully added !!
+bash
+g++ -o NumberGuess Number_Guessing_Game.cpp
+./NumberGuess
 
 
----
+### Or with any C++ compiler of your choice.
 
-## 📦 Requirements
+## 📸 Preview
 
-- A C++ compiler (e.g., g++, clang++)
-- Any operating system (Windows, Linux, macOS)
-- Basic understanding of terminal or command prompt
+bash
+Enter : - 
+ 1 - for play : 
+ 0 - for exit : 
+ :- 1
+Select level : 
+  Easy - 1 : 
+  Medium - 2 : 
+  Hard - 3 : 
+Enter : - 2
+Range is - 0 - 50 
+Guess the number  :  : 25
+Your number is lesser
 
----
+Enter again : 37
+Your number is greater
 
-## 📌 How to Run
+Enter again : 32
+Congratulations !!! you got it :
 
-1. Clone or download the repository.
-2. Compile the code:
-   bash
-   g++ To_Do_List.cpp -o todo
-   
-3. Run the application:
-   bash
-   ./todo    # or todo.exe on Windows
-   
-
----
-
-## 🧑‍💻 Author
-
-*Arindam*  
-CODSOFT Virtual Internship Program
-
----
 
 ## 📃 License
 
-This project is for educational purposes only.
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Made with 💻 and ☕
